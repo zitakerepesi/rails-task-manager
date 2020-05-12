@@ -1,0 +1,10 @@
+<p>Edit Task</p>
+<ul></ul>
+  <%= form_for(@task) do |f| %>
+  <ol> <%= f.label :title %></ol>
+  <ol> <%= f.text_field :title %></ol>
+  <ol> <%= f.label :details %></ol>
+  <ol> <%= f.text_field :details %></ol>
+  <%= f.submit %>
+</ul>
+<% end %>
